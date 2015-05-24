@@ -1,5 +1,5 @@
 # webegin
-My personal web development starting point.
+Personal web development starting point.
 
 ---
 
