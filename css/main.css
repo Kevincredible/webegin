@@ -42,7 +42,8 @@ COLUMN STYLES
 .col {
   display: block;
   width: 100%;
-  float: left; }
+  float: left;
+  padding: 0 10px; }
   .col.twelfth {
     width: 8.333%; }
   .col.sixth {
@@ -83,8 +84,7 @@ COLUMN STYLES
 
 @media only screen and (max-width: 1024px) {
   .col.twelfth, .col.sixth, .col.fourth, .col.third, .col.half {
-    width: 100%;
-    margin: initial; }
+    width: 100%; }
   .col.twelfth-md {
     width: 8.333%; }
   .col.sixth-md {
@@ -124,8 +124,7 @@ COLUMN STYLES
     margin-right: 50%; } }
 @media only screen and (max-width: 768px) {
   .col.twelfth-md, .col.sixth-md, .col.fourth-md, .col.third-md, .col.half-md {
-    width: 100%;
-    margin: initial; }
+    width: 100%; }
   .col.twelfth-sm {
     width: 8.333%; }
   .col.sixth-sm {
@@ -165,8 +164,7 @@ COLUMN STYLES
     margin-right: 50%; } }
 @media only screen and (max-width: 480px) {
   .col.twelfth-sm, .col.sixth-sm, .col.fourth-sm, .col.third-sm, .col.half-sm {
-    width: 100%;
-    margin: initial; }
+    width: 100%; }
   .col.twelfth-xs {
     width: 8.333%; }
   .col.sixth-xs {
