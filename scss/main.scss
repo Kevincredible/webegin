@@ -21,12 +21,12 @@ COLUMN STYLES
 /* ----------------------------------------
 CUSTOM STYLES
 ---------------------------------------- */
-@media only screen and (max-width: $tablet-landscape) {
+@media only screen and (max-width: $tablet-landscape-breakpoint) {
     
 }
-@media only screen and (max-width: $tablet-portrait) {
+@media only screen and (max-width: $tablet-portrait-breakpoint) {
     
 }
-@media only screen and (max-width: $phone) {
+@media only screen and (max-width: $phone-breakpoint) {
     
 }
