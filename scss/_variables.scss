@@ -1,5 +1,8 @@
-$tablet-landscape: 1024px;
-$tablet-portrait: 768px;
-$phone: 480px;
+$tablet-landscape-breakpoint: 1024px;
+$tablet-portrait-breakpoint: 768px;
+$phone-breakpoint: 480px;
 $font-stack: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$column-padding: 0 10px;
+$column-padding: 10px;
+$tablet-landscape-col: md;
+$tablet-portrait-col: sm;
+$phone-col: xs;
