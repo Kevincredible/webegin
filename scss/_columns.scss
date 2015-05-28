@@ -3,243 +3,130 @@
     width: 100%;
     float: left;
     padding: $column-padding;
+    &.no-padding {
+        padding: 0;
+    }
     &.twelfth {
         width: 8.333%;
+    }
+    &.twelfth-x11 {
+        width: 91.667%;
     }
     &.sixth {
         width: 16.667%;
     }
+    &.sixth-x5 {
+        width: 83.333%;
+    }
     &.fourth {
         width: 25%;
     }
+    &.fourth-x3 {
+        width: 75%;
+    }
     &.third {
         width: 33.333%;
+    }
+    &.third-x2 {
+        width: 66.667%;
     }
     &.half {
         width: 50%;
     }
     &.margin-twelfth {
-        margin-left: 8.333%
+        margin-left: 8.333%;
+    }
+    &.margin-twelfth-x11 {
+        margin-left: 91.667%;
     }
     &.margin-sixth {
-        margin-left: 16.667%
+        margin-left: 16.667%;
+    }
+    &.margin-sixth-x5 {
+        margin-left: 83.333%;
     }
     &.margin-fourth {
-        margin-left: 25%
+        margin-left: 25%;
+    }
+    &.margin-fourth-x3 {
+        margin-left: 75%;
     }
     &.margin-third {
-        margin-left: 33.333%
+        margin-left: 33.333%;
+    }
+    &.margin-third-x2 {
+        margin-left: 66.667%;
     }
     &.margin-half {
-        margin-left: 50%
+        margin-left: 50%;
     }
     &.float-right {
         float: right;
         &.margin-twelfth {
             margin-left: initial;
-            margin-right: 8.333%
+            margin-right: 8.333%;
+        }
+        &.margin-twelfth-x11 {
+            margin-left: initial;
+            margin-right: 91.667%;
         }
         &.margin-sixth {
             margin-left: initial;
-            margin-right: 16.667%
+            margin-right: 16.667%;
+        }
+        &.margin-sixth-x5 {
+            margin-left: initial;
+            margin-right: 83.333%;
         }
         &.margin-fourth {
             margin-left: initial;
-            margin-right: 25%
+            margin-right: 25%;
+        }
+        &.margin-fourth-x3 {
+            margin-left: initial;
+            margin-right: 75%;
         }
         &.margin-third {
             margin-left: initial;
-            margin-right: 33.333%
+            margin-right: 33.333%;
+        }
+        &.margin-third-x2 {
+            margin-left: initial;
+            margin-right: 66.667%;
         }
         &.margin-half {
             margin-left: initial;
-            margin-right: 50%
+            margin-right: 50%;
         }
     }
 }
-@media only screen and (max-width: $tablet-landscape) {
-    .col {
-        &.twelfth, &.sixth, &.fourth, &.third, &.half {
+@media only screen and (max-width: $tablet-landscape-breakpoint) {
+    .col:not(.#{$tablet-landscape-col}) {
+        &.twelfth, &.twelfth-x11, &.sixth, &.sixth-x5, &.fourth, &.fourth-x3, &.third, &.third-x2, &.half {
             width: 100%;
         }
-        &.twelfth-md {
-            width: 8.333%;
-        }
-        &.sixth-md {
-            width: 16.667%;
-        }
-        &.fourth-md {
-            width: 25%;
-        }
-        &.third-md {
-            width: 33.333%;
-        }
-        &.half-md {
-            width: 50%;
-        }
-        &.margin-twelfth, &.margin-sixth, &.margin-fourth, &.margin-third, &.margin-half {
+        &.margin-twelfth, &.margin-twelfth-x11, &.margin-sixth, &.margin-sixth-x5, &.margin-fourth, &.margin-fourth-x3, &.margin-third, &.margin-third-x2, &.margin-half {
             margin: initial;
-        }
-        &.margin-twelfth-md {
-            margin-left: 8.333%
-        }
-        &.margin-sixth-md {
-            margin-left: 16.667%
-        }
-        &.margin-fourth-md {
-            margin-left: 25%
-        }
-        &.margin-third-md {
-            margin-left: 33.333%
-        }
-        &.margin-half-md {
-            margin-left: 50%
-        }
-        &.float-right {
-            &.margin-twelfth-md {
-                margin-left: initial;
-                margin-right: 8.333%
-            }
-            &.margin-sixth-md {
-                margin-left: initial;
-                margin-right: 16.667%
-            }
-            &.margin-fourth-md {
-                margin-left: initial;
-                margin-right: 25%
-            }
-            &.margin-third-md {
-                margin-left: initial;
-                margin-right: 33.333%
-            }
-            &.margin-half-md {
-                margin-left: initial;
-                margin-right: 50%
-            }
         }
     }
 }
-@media only screen and (max-width: $tablet-portrait) {
-    .col {
-        &.twelfth-md, &.sixth-md, &.fourth-md, &.third-md, &.half-md {
+@media only screen and (max-width: $tablet-portrait-breakpoint) {
+    .col:not(.#{$tablet-portrait-col}) {
+        &.twelfth, &.twelfth-x11, &.sixth, &.sixth-x5, &.fourth, &.fourth-x3, &.third, &.third-x2, &.half {
             width: 100%;
         }
-        &.twelfth-sm {
-            width: 8.333%;
-        }
-        &.sixth-sm {
-            width: 16.667%;
-        }
-        &.fourth-sm {
-            width: 25%;
-        }
-        &.third-sm {
-            width: 33.333%;
-        }
-        &.half-sm {
-            width: 50%;
-        }
-        &.margin-twelfth-md, &.margin-sixth-md, &.margin-fourth-md, &.margin-third-md, &.margin-half-md {
+        &.margin-twelfth, &.margin-twelfth-x11, &.margin-sixth, &.margin-sixth-x5, &.margin-fourth, &.margin-fourth-x3, &.margin-third, &.margin-third-x2, &.margin-half {
             margin: initial;
-        }
-        &.margin-twelfth-sm {
-            margin-left: 8.333%
-        }
-        &.margin-sixth-sm {
-            margin-left: 16.667%
-        }
-        &.margin-fourth-sm {
-            margin-left: 25%
-        }
-        &.margin-third-sm {
-            margin-left: 33.333%
-        }
-        &.margin-half-sm {
-            margin-left: 50%
-        }
-        &.float-right {
-            &.margin-twelfth-sm {
-                margin-left: initial;
-                margin-right: 8.333%
-            }
-            &.margin-sixth-sm {
-                margin-left: initial;
-                margin-right: 16.667%
-            }
-            &.margin-fourth-sm {
-                margin-left: initial;
-                margin-right: 25%
-            }
-            &.margin-third-sm {
-                margin-left: initial;
-                margin-right: 33.333%
-            }
-            &.margin-half-sm {
-                margin-left: initial;
-                margin-right: 50%
-            }
         }
     }
 }
-@media only screen and (max-width: $phone) {
-    .col {
-        &.twelfth-sm, &.sixth-sm, &.fourth-sm, &.third-sm, &.half-sm {
+@media only screen and (max-width: $phone-breakpoint) {
+    .col:not(.#{$phone-col}) {
+        &.twelfth, &.twelfth-x11, &.sixth, &.sixth-x5, &.fourth, &.fourth-x3, &.third, &.third-x2, &.half {
             width: 100%;
         }
-        &.twelfth-xs {
-            width: 8.333%;
-        }
-        &.sixth-xs {
-            width: 16.667%;
-        }
-        &.fourth-xs {
-            width: 25%;
-        }
-        &.third-xs {
-            width: 33.333%;
-        }
-        &.half-xs {
-            width: 50%;
-        }
-        &.margin-twelfth-sm, &.margin-sixth-sm, &.margin-fourth-sm, &.margin-third-sm, &.margin-half-sm {
+        &.margin-twelfth, &.margin-twelfth-x11, &.margin-sixth, &.margin-sixth-x5, &.margin-fourth, &.margin-fourth-x3, &.margin-third, &.margin-third-x2, &.margin-half {
             margin: initial;
-        }
-        &.margin-twelfth-xs {
-            margin-left: 8.333%
-        }
-        &.margin-sixth-xs {
-            margin-left: 16.667%
-        }
-        &.margin-fourth-xs {
-            margin-left: 25%
-        }
-        &.margin-third-xs {
-            margin-left: 33.333%
-        }
-        &.margin-half-xs {
-            margin-left: 50%
-        }
-        &.float-right {
-            &.margin-twelfth-xs {
-                margin-left: initial;
-                margin-right: 8.333%
-            }
-            &.margin-sixth-xs {
-                margin-left: initial;
-                margin-right: 16.667%
-            }
-            &.margin-fourth-xs {
-                margin-left: initial;
-                margin-right: 25%
-            }
-            &.margin-third-xs {
-                margin-left: initial;
-                margin-right: 33.333%
-            }
-            &.margin-half-xs {
-                margin-left: initial;
-                margin-right: 50%
-            }
         }
     }
 }
