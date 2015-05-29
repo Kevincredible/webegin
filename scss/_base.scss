@@ -3,18 +3,22 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html, body {
+html {
 	width: 100%;
 	height: 100%;
 }
 body {
+    @extend html;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-a img {
-	outline: none;
+a {
+    @include animated;
+    img {
+        outline: none;
+    }
 }
 img {
 	max-width: 100%;
