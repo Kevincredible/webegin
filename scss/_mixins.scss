@@ -1,12 +1,4 @@
 @mixin animated($property: all, $duration: 250ms, $function: ease) {
-    -webkit-transition: $property $duration $function;
-    -moz-transition: $property $duration $function;
-    -ms-transition: $property $duration $function;
-    -o-transition: $property $duration $function;
     transition: $property $duration $function;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0);
 }
