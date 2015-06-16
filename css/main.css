@@ -10,6 +10,8 @@ Base Styles
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -24,14 +26,8 @@ body {
 
 a {
   -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
   transition: all 250ms ease;
   -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
   transform: translateZ(0); }
   a img {
     outline: none; }
@@ -336,3 +332,4 @@ Column Styles
 /* ----------------------------------------
 Site Styles
 ---------------------------------------- */
+
