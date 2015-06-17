@@ -1,3 +1,6 @@
+.row {
+    width: calc(#{$container-width} + (2 * #{$col-padding}));
+}
 .col {
     display: block;
     width: 100%;
