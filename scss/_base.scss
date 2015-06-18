@@ -37,6 +37,9 @@ img {
 	display: table;
 	clear: both;
 }
+.ellipsis {
+    text-overflow: ellipsis;
+}
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
     .container {
         width: 100%;
