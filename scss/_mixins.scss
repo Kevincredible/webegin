@@ -2,3 +2,549 @@
     transition: $property $duration $function;
     transform: translateZ(0);
 }
+@mixin breakpoint-columns($override, $establish) {
+    .col {
+        &.twelfth {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 8.333%;
+            }
+        }
+        &.twelfth-x11 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 91.666%;
+            }
+        }
+        &.twelfth-x7 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 58.333%;
+            }
+        }
+        &.twelfth-x5 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 41.666%;
+            }
+        }
+        &.eighth {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 12.5%;
+            }
+        }
+        &.eighth-x7 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 87.5%;
+            }
+        }
+        &.eighth-x5 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 62.5%;
+            }
+        }
+        &.eighth-x3 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 37.5%;
+            }
+        }
+        &.sixth {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 16.666%;
+            }
+        }
+        &.sixth-x5 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 83.333%;
+            }
+        }
+        &.fourth {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 25%;
+            }
+        }
+        &.fourth-x3 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 75%;
+            }
+        }
+        &.third {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 33.333%;
+            }
+        }
+        &.third-x2 {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 66.666%;
+            }
+        }
+        &.half {
+            @if ($override) {
+                &-#{$override} {
+                    width: 100%;
+                }
+            } @else {
+                width: 100%;
+            }
+            &-#{$establish} {
+                width: 50%;
+            }
+        }
+        &.margin-twelfth {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 8.333%;
+            }
+        }
+        &.margin-twelfth-x11 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 91.666%;
+            }
+        }
+        &.margin-twelfth-x7 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 58.333%;
+            }
+        }
+        &.margin-twelfth-x5 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 41.666%;
+            }
+        }
+        &.margin-eighth {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 12.5%;
+            }
+        }
+        &.margin-eighth-x7 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 87.5%;
+            }
+        }
+        &.margin-eighth-x5 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 62.5%;
+            }
+        }
+        &.margin-eighth-x3 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 37.5%;
+            }
+        }
+        &.margin-sixth {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 16.666%;
+            }
+        }
+        &.margin-sixth-x5 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 83.333%;
+            }
+        }
+        &.margin-fourth {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 25%;
+            }
+        }
+        &.margin-fourth-x3 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 75%;
+            }
+        }
+        &.margin-third {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 33.333%;
+            }
+        }
+        &.margin-third-x2 {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 66.666%;
+            }
+        }
+        &.margin-half {
+            @if ($override) {
+                &-#{$override} {
+                    margin: initial;
+                }
+            } @else {
+                margin: initial;
+            }
+            &-#{$establish} {
+                margin-left: 50%;
+            }
+        }
+        &.float-right {
+            &.margin-twelfth {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 8.333%;
+                }
+            }
+            &.margin-twelfth-x11 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 91.666%;
+                }
+            }
+            &.margin-twelfth-x7 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 58.333%;
+                }
+            }
+            &.margin-twelfth-x5 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 41.666%;
+                }
+            }
+            &.margin-eighth {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 12.5%;
+                }
+            }
+            &.margin-eighth-x7 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 87.5%;
+                }
+            }
+            &.margin-eighth-x5 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 62.5%;
+                }
+            }
+            &.margin-eighth-x3 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 37.5%;
+                }
+            }
+            &.margin-sixth {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 16.666%;
+                }
+            }
+            &.margin-sixth-x5 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 83.333%;
+                }
+            }
+            &.margin-fourth {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 25%;
+                }
+            }
+            &.margin-fourth-x3 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 75%;
+                }
+            }
+            &.margin-third {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 33.333%;
+                }
+            }
+            &.margin-third-x2 {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 66.666%;
+                }
+            }
+            &.margin-half {
+                @if ($override) {
+                    &-#{$override} {
+                        margin: initial;
+                    }
+                } @else {
+                    margin: initial;
+                }
+                &-#{$establish} {
+                    margin-right: 50%;
+                }
+            }
+        }
+    }
+}
