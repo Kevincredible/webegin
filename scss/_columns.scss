@@ -1,6 +1,3 @@
-.row {
-    width: calc(#{$container-width} + (2 * #{$col-padding}));
-}
 .col {
     display: block;
     width: 100%;
@@ -14,6 +11,24 @@
     }
     &.twelfth-x11 {
         width: 91.666%;
+    }
+    &.twelfth-x7 {
+        width: 58.333%;
+    }
+    &.twelfth-x5 {
+        width: 41.666%;
+    }
+    &.eighth {
+        width: 12.5%;
+    }
+    &.eighth-x7 {
+        width: 87.5%;
+    }
+    &.eighth-x5 {
+        width: 62.5%;
+    }
+    &.eighth-x3 {
+        width: 37.5%;
     }
     &.sixth {
         width: 16.666%;
@@ -42,6 +57,24 @@
     &.margin-twelfth-x11 {
         margin-left: 91.666%;
     }
+    &.margin-twelfth-x7 {
+        margin-left: 58.333%;
+    }
+    &.margin-twelfth-x5 {
+        margin-left: 41.666%;
+    }
+    &.margin-eighth {
+        margin-left: 12.5%;
+    }
+    &.margin-eighth-x7 {
+        margin-left: 87.5%;
+    }
+    &.margin-eighth-x5 {
+        margin-left: 62.5%;
+    }
+    &.margin-eighth-x3 {
+        margin-left: 37.5%;
+    }
     &.margin-sixth {
         margin-left: 16.666%;
     }
@@ -66,345 +99,1071 @@
     &.float-right {
         float: right;
         &.margin-twelfth {
-            margin-left: initial;
+            margin: initial;
             margin-right: 8.333%;
         }
         &.margin-twelfth-x11 {
-            margin-left: initial;
+            margin: initial;
             margin-right: 91.666%;
         }
+        &.margin-twelfth-x7 {
+            margin: initial;
+            margin-right: 58.333%;
+        }
+        &.margin-twelfth-x5 {
+            margin: initial;
+            margin-right: 41.666%;
+        }
+        &.margin-eighth {
+            margin: initial;
+            margin-right: 12.5%;
+        }
+        &.margin-eighth-x7 {
+            margin: initial;
+            margin-right: 87.5%;
+        }
+        &.margin-eighth-x5 {
+            margin: initial;
+            margin-right: 62.5%;
+        }
+        &.margin-eighth-x3 {
+            margin: initial;
+            margin-right: 37.5%;
+        }
         &.margin-sixth {
-            margin-left: initial;
+            margin: initial;
             margin-right: 16.666%;
         }
         &.margin-sixth-x5 {
-            margin-left: initial;
+            margin: initial;
             margin-right: 83.333%;
         }
         &.margin-fourth {
-            margin-left: initial;
+            margin: initial;
             margin-right: 25%;
         }
         &.margin-fourth-x3 {
-            margin-left: initial;
+            margin: initial;
             margin-right: 75%;
         }
         &.margin-third {
-            margin-left: initial;
+            margin: initial;
             margin-right: 33.333%;
         }
         &.margin-third-x2 {
-            margin-left: initial;
+            margin: initial;
             margin-right: 66.666%;
         }
         &.margin-half {
-            margin-left: initial;
+            margin: initial;
             margin-right: 50%;
         }
     }
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
     .col {
-        &.twelfth, &.twelfth-x11, &.sixth, &.sixth-x5, &.fourth, &.fourth-x3, &.third, &.third-x2, &.half {
+        &.twelfth {
             width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 8.333%;
+            }
         }
-        &.margin-twelfth, &.margin-twelfth-x11, &.margin-sixth, &.margin-sixth-x5, &.margin-fourth, &.margin-fourth-x3, &.margin-third, &.margin-third-x2, &.margin-half {
+        &.twelfth-x11 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 91.666%;
+            }
+        }
+        &.twelfth-x7 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 58.333%;
+            }
+        }
+        &.twelfth-x5 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 41.666%;
+            }
+        }
+        &.eighth {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 12.5%;
+            }
+        }
+        &.eighth-x7 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 87.5%;
+            }
+        }
+        &.eighth-x5 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 62.5%;
+            }
+        }
+        &.eighth-x3 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 37.5%;
+            }
+        }
+        &.sixth {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 16.666%;
+            }
+        }
+        &.sixth-x5 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 83.333%;
+            }
+        }
+        &.fourth {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 25%;
+            }
+        }
+        &.fourth-x3 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 75%;
+            }
+        }
+        &.third {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 33.333%;
+            }
+        }
+        &.third-x2 {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 66.666%;
+            }
+        }
+        &.half {
+            width: 100%;
+            &-#{$tablet-landscape-affix} {
+                width: 50%;
+            }
+        }
+        &.margin-twelfth {
             margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 8.333%;
+            }
         }
-        &.twelfth-#{$tablet-landscape-affix} {
-            width: 8.333%;
+        &.margin-twelfth-x11 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 91.666%;
+            }
         }
-        &.twelfth-x11-#{$tablet-landscape-affix} {
-            width: 91.666%;
+        &.margin-twelfth-x7 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 58.333%;
+            }
         }
-        &.sixth-#{$tablet-landscape-affix} {
-            width: 16.666%;
+        &.margin-twelfth-x5 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 41.666%;
+            }
         }
-        &.sixth-x5-#{$tablet-landscape-affix} {
-            width: 83.333%;
+        &.margin-eighth {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 12.5%;
+            }
         }
-        &.fourth-#{$tablet-landscape-affix} {
-            width: 25%;
+        &.margin-eighth-x7 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 87.5%;
+            }
         }
-        &.fourth-x3-#{$tablet-landscape-affix} {
-            width: 75%;
+        &.margin-eighth-x5 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 62.5%;
+            }
         }
-        &.third-#{$tablet-landscape-affix} {
-            width: 33.333%;
+        &.margin-eighth-x3 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 37.5%;
+            }
         }
-        &.third-x2-#{$tablet-landscape-affix} {
-            width: 66.666%;
+        &.margin-sixth {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 16.666%;
+            }
         }
-        &.half-#{$tablet-landscape-affix} {
-            width: 50%;
+        &.margin-sixth-x5 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 83.333%;
+            }
         }
-        &.margin-twelfth-#{$tablet-landscape-affix} {
-            margin-left: 8.333%;
+        &.margin-fourth {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 25%;
+            }
         }
-        &.margin-twelfth-x11-#{$tablet-landscape-affix} {
-            margin-left: 91.666%;
+        &.margin-fourth-x3 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 75%;
+            }
         }
-        &.margin-sixth-#{$tablet-landscape-affix} {
-            margin-left: 16.666%;
+        &.margin-third {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 33.333%;
+            }
         }
-        &.margin-sixth-x5-#{$tablet-landscape-affix} {
-            margin-left: 83.333%;
+        &.margin-third-x2 {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 66.666%;
+            }
         }
-        &.margin-fourth-#{$tablet-landscape-affix} {
-            margin-left: 25%;
-        }
-        &.margin-fourth-x3-#{$tablet-landscape-affix} {
-            margin-left: 75%;
-        }
-        &.margin-third-#{$tablet-landscape-affix} {
-            margin-left: 33.333%;
-        }
-        &.margin-third-x2-#{$tablet-landscape-affix} {
-            margin-left: 66.666%;
-        }
-        &.margin-half-#{$tablet-landscape-affix} {
-            margin-left: 50%;
+        &.margin-half {
+            margin: initial;
+            &-#{$tablet-landscape-affix} {
+                margin-left: 50%;
+            }
         }
         &.float-right {
-            &.margin-twelfth-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 8.333%;
+            &.margin-twelfth {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 8.333%;
+                }
             }
-            &.margin-twelfth-x11-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 91.666%;
+            &.margin-twelfth-x11 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 91.666%;
+                }
             }
-            &.margin-sixth-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 16.666%;
+            &.margin-twelfth-x7 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 58.333%;
+                }
             }
-            &.margin-sixth-x5-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 83.333%;
+            &.margin-twelfth-x5 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 41.666%;
+                }
             }
-            &.margin-fourth-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 25%;
+            &.margin-eighth {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 12.5%;
+                }
             }
-            &.margin-fourth-x3-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 75%;
+            &.margin-eighth-x7 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 87.5%;
+                }
             }
-            &.margin-third-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 33.333%;
+            &.margin-eighth-x5 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 62.5%;
+                }
             }
-            &.margin-third-x2-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 66.666%;
+            &.margin-eighth-x3 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 37.5%;
+                }
             }
-            &.margin-half-#{$tablet-landscape-affix} {
-                margin-left: initial;
-                margin-right: 50%;
+            &.margin-sixth {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 16.666%;
+                }
+            }
+            &.margin-sixth-x5 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 83.333%;
+                }
+            }
+            &.margin-fourth {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 25%;
+                }
+            }
+            &.margin-fourth-x3 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 75%;
+                }
+            }
+            &.margin-third {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 33.333%;
+                }
+            }
+            &.margin-third-x2 {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 66.666%;
+                }
+            }
+            &.margin-half {
+                margin: initial;
+                &-#{$tablet-landscape-affix} {
+                    margin-right: 50%;
+                }
             }
         }
     }
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
     .col {
-        &.twelfth-#{$tablet-landscape-affix}, &.twelfth-x11-#{$tablet-landscape-affix}, &.sixth-#{$tablet-landscape-affix}, &.sixth-x5-#{$tablet-landscape-affix}, &.fourth-#{$tablet-landscape-affix}, &.fourth-x3-#{$tablet-landscape-affix}, &.third-#{$tablet-landscape-affix}, &.third-x2-#{$tablet-landscape-affix}, &.half-#{$tablet-landscape-affix} {
-            width: 100%;
+        &.twelfth {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 8.333%;
+            }
         }
-        &.margin-twelfth-#{$tablet-landscape-affix}, &.margin-twelfth-x11-#{$tablet-landscape-affix}, &.margin-sixth-#{$tablet-landscape-affix}, &.margin-sixth-x5-#{$tablet-landscape-affix}, &.margin-fourth-#{$tablet-landscape-affix}, &.margin-fourth-x3-#{$tablet-landscape-affix}, &.margin-third-#{$tablet-landscape-affix}, &.margin-third-x2-#{$tablet-landscape-affix}, &.margin-half-#{$tablet-landscape-affix} {
-            margin: initial;
+        &.twelfth-x11 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 91.666%;
+            }
         }
-        &.twelfth-#{$tablet-portrait-affix} {
-            width: 8.333%;
+        &.twelfth-x7 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 58.333%;
+            }
         }
-        &.twelfth-x11-#{$tablet-portrait-affix} {
-            width: 91.666%;
+        &.twelfth-x5 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 41.666%;
+            }
         }
-        &.sixth-#{$tablet-portrait-affix} {
-            width: 16.666%;
+        &.eighth {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 12.5%;
+            }
         }
-        &.sixth-x5-#{$tablet-portrait-affix} {
-            width: 83.333%;
+        &.eighth-x7 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 87.5%;
+            }
         }
-        &.fourth-#{$tablet-portrait-affix} {
-            width: 25%;
+        &.eighth-x5 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 62.5%;
+            }
         }
-        &.fourth-x3-#{$tablet-portrait-affix} {
-            width: 75%;
+        &.eighth-x3 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 37.5%;
+            }
         }
-        &.third-#{$tablet-portrait-affix} {
-            width: 33.333%;
+        &.sixth {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 16.666%;
+            }
         }
-        &.third-x2-#{$tablet-portrait-affix} {
-            width: 66.666%;
+        &.sixth-x5 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 83.333%;
+            }
         }
-        &.half-#{$tablet-portrait-affix} {
-            width: 50%;
+        &.fourth {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 25%;
+            }
         }
-        &.margin-twelfth-#{$tablet-portrait-affix} {
-            margin-left: 8.333%;
+        &.fourth-x3 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 75%;
+            }
         }
-        &.margin-twelfth-x11-#{$tablet-portrait-affix} {
-            margin-left: 91.666%;
+        &.third {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 33.333%;
+            }
         }
-        &.margin-sixth-#{$tablet-portrait-affix} {
-            margin-left: 16.666%;
+        &.third-x2 {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 66.666%;
+            }
         }
-        &.margin-sixth-x5-#{$tablet-portrait-affix} {
-            margin-left: 83.333%;
+        &.half {
+            &-#{$tablet-landscape-affix} {
+                width: 100%;
+            }
+            &-#{$tablet-portrait-affix} {
+                width: 50%;
+            }
         }
-        &.margin-fourth-#{$tablet-portrait-affix} {
-            margin-left: 25%;
+        &.margin-twelfth {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 8.333%;
+            }
         }
-        &.margin-fourth-x3-#{$tablet-portrait-affix} {
-            margin-left: 75%;
+        &.margin-twelfth-x11 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 91.666%;
+            }
         }
-        &.margin-third-#{$tablet-portrait-affix} {
-            margin-left: 33.333%;
+        &.margin-twelfth-x7 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 58.333%;
+            }
         }
-        &.margin-third-x2-#{$tablet-portrait-affix} {
-            margin-left: 66.666%;
+        &.margin-twelfth-x5 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 41.666%;
+            }
         }
-        &.margin-half-#{$tablet-portrait-affix} {
-            margin-left: 50%;
+        &.margin-eighth {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 12.5%;
+            }
+        }
+        &.margin-eighth-x7 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 87.5%;
+            }
+        }
+        &.margin-eighth-x5 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 62.5%;
+            }
+        }
+        &.margin-eighth-x3 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 37.5%;
+            }
+        }
+        &.margin-sixth {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 16.666%;
+            }
+        }
+        &.margin-sixth-x5 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 83.333%;
+            }
+        }
+        &.margin-fourth {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 25%;
+            }
+        }
+        &.margin-fourth-x3 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 75%;
+            }
+        }
+        &.margin-third {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 33.333%;
+            }
+        }
+        &.margin-third-x2 {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 66.666%;
+            }
+        }
+        &.margin-half {
+            &-#{$tablet-landscape-affix} {
+                margin: initial;
+            }
+            &-#{$tablet-portrait-affix} {
+                margin-left: 50%;
+            }
         }
         &.float-right {
-            &.margin-twelfth-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 8.333%;
+            &.margin-twelfth {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 8.333%;
+                }
             }
-            &.margin-twelfth-x11-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 91.666%;
+            &.margin-twelfth-x11 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 91.666%;
+                }
             }
-            &.margin-sixth-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 16.666%;
+            &.margin-twelfth-x7 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 58.333%;
+                }
             }
-            &.margin-sixth-x5-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 83.333%;
+            &.margin-twelfth-x5 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 41.666%;
+                }
             }
-            &.margin-fourth-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 25%;
+            &.margin-eighth {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 12.5%;
+                }
             }
-            &.margin-fourth-x3-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 75%;
+            &.margin-eighth-x7 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 87.5%;
+                }
             }
-            &.margin-third-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 33.333%;
+            &.margin-eighth-x5 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 62.5%;
+                }
             }
-            &.margin-third-x2-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 66.666%;
+            &.margin-eighth-x3 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 37.5%;
+                }
             }
-            &.margin-half-#{$tablet-portrait-affix} {
-                margin-left: initial;
-                margin-right: 50%;
+            &.margin-sixth {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 16.666%;
+                }
+            }
+            &.margin-sixth-x5 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 83.333%;
+                }
+            }
+            &.margin-fourth {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 25%;
+                }
+            }
+            &.margin-fourth-x3 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 75%;
+                }
+            }
+            &.margin-third {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 33.333%;
+                }
+            }
+            &.margin-third-x2 {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 66.666%;
+                }
+            }
+            &.margin-half {
+                &-#{$tablet-landscape-affix} {
+                    margin: initial;
+                }
+                &-#{$tablet-portrait-affix} {
+                    margin-right: 50%;
+                }
             }
         }
     }
 }
 @media only screen and (max-width: $phone-breakpoint) {
     .col {
-        &.twelfth-#{$tablet-portrait-affix}, &.twelfth-x11-#{$tablet-portrait-affix}, &.sixth-#{$tablet-portrait-affix}, &.sixth-x5-#{$tablet-portrait-affix}, &.fourth-#{$tablet-portrait-affix}, &.fourth-x3-#{$tablet-portrait-affix}, &.third-#{$tablet-portrait-affix}, &.third-x2-#{$tablet-portrait-affix}, &.half-#{$tablet-portrait-affix} {
-            width: 100%;
+        &.twelfth {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 8.333%;
+            }
         }
-        &.margin-twelfth-#{$tablet-portrait-affix}, &.margin-twelfth-x11-#{$tablet-portrait-affix}, &.margin-sixth-#{$tablet-portrait-affix}, &.margin-sixth-x5-#{$tablet-portrait-affix}, &.margin-fourth-#{$tablet-portrait-affix}, &.margin-fourth-x3-#{$tablet-portrait-affix}, &.margin-third-#{$tablet-portrait-affix}, &.margin-third-x2-#{$tablet-portrait-affix}, &.margin-half-#{$tablet-portrait-affix} {
-            margin: initial;
+        &.twelfth-x11 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 91.666%;
+            }
         }
-        &.twelfth-#{$phone-affix} {
-            width: 8.333%;
+        &.twelfth-x7 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 58.333%;
+            }
         }
-        &.twelfth-x11-#{$phone-affix} {
-            width: 91.666%;
+        &.twelfth-x5 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 41.666%;
+            }
         }
-        &.sixth-#{$phone-affix} {
-            width: 16.666%;
+        &.eighth {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 12.5%;
+            }
         }
-        &.sixth-x5-#{$phone-affix} {
-            width: 83.333%;
+        &.eighth-x7 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 87.5%;
+            }
         }
-        &.fourth-#{$phone-affix} {
-            width: 25%;
+        &.eighth-x5 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 62.5%;
+            }
         }
-        &.fourth-x3-#{$phone-affix} {
-            width: 75%;
+        &.eighth-x3 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 37.5%;
+            }
         }
-        &.third-#{$phone-affix} {
-            width: 33.333%;
+        &.sixth {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 16.666%;
+            }
         }
-        &.third-x2-#{$phone-affix} {
-            width: 66.666%;
+        &.sixth-x5 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 83.333%;
+            }
         }
-        &.half-#{$phone-affix} {
-            width: 50%;
+        &.fourth {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 25%;
+            }
         }
-        &.margin-twelfth-#{$phone-affix} {
-            margin-left: 8.333%;
+        &.fourth-x3 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 75%;
+            }
         }
-        &.margin-twelfth-x11-#{$phone-affix} {
-            margin-left: 91.666%;
+        &.third {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 33.333%;
+            }
         }
-        &.margin-sixth-#{$phone-affix} {
-            margin-left: 16.666%;
+        &.third-x2 {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 66.666%;
+            }
         }
-        &.margin-sixth-x5-#{$phone-affix} {
-            margin-left: 83.333%;
+        &.half {
+            &-#{$tablet-portrait-affix} {
+                width: 100%;
+            }
+            &-#{$phone-affix} {
+                width: 50%;
+            }
         }
-        &.margin-fourth-#{$phone-affix} {
-            margin-left: 25%;
+        &.margin-twelfth {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 8.333%;
+            }
         }
-        &.margin-fourth-x3-#{$phone-affix} {
-            margin-left: 75%;
+        &.margin-twelfth-x11 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 91.666%;
+            }
         }
-        &.margin-third-#{$phone-affix} {
-            margin-left: 33.333%;
+        &.margin-twelfth-x7 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 58.333%;
+            }
         }
-        &.margin-third-x2-#{$phone-affix} {
-            margin-left: 66.666%;
+        &.margin-twelfth-x5 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 41.666%;
+            }
         }
-        &.margin-half-#{$phone-affix} {
-            margin-left: 50%;
+        &.margin-eighth {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 12.5%;
+            }
+        }
+        &.margin-eighth-x7 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 87.5%;
+            }
+        }
+        &.margin-eighth-x5 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 62.5%;
+            }
+        }
+        &.margin-eighth-x3 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 37.5%;
+            }
+        }
+        &.margin-sixth {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 16.666%;
+            }
+        }
+        &.margin-sixth-x5 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 83.333%;
+            }
+        }
+        &.margin-fourth {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 25%;
+            }
+        }
+        &.margin-fourth-x3 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 75%;
+            }
+        }
+        &.margin-third {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 33.333%;
+            }
+        }
+        &.margin-third-x2 {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 66.666%;
+            }
+        }
+        &.margin-half {
+            &-#{$tablet-portrait-affix} {
+                margin: initial;
+            }
+            &-#{$phone-affix} {
+                margin-left: 50%;
+            }
         }
         &.float-right {
-            &.margin-twelfth-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 8.333%;
+            &.margin-twelfth {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 8.333%;
+                }
             }
-            &.margin-twelfth-x11-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 91.666%;
+            &.margin-twelfth-x11 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 91.666%;
+                }
             }
-            &.margin-sixth-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 16.666%;
+            &.margin-twelfth-x7 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 58.333%;
+                }
             }
-            &.margin-sixth-x5-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 83.333%;
+            &.margin-twelfth-x5 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 41.666%;
+                }
             }
-            &.margin-fourth-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 25%;
+            &.margin-eighth {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 12.5%;
+                }
             }
-            &.margin-fourth-x3-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 75%;
+            &.margin-eighth-x7 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 87.5%;
+                }
             }
-            &.margin-third-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 33.333%;
+            &.margin-eighth-x5 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 62.5%;
+                }
             }
-            &.margin-third-x2-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 66.666%;
+            &.margin-eighth-x3 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 37.5%;
+                }
             }
-            &.margin-half-#{$phone-affix} {
-                margin-left: initial;
-                margin-right: 50%;
+            &.margin-sixth {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 16.666%;
+                }
+            }
+            &.margin-sixth-x5 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 83.333%;
+                }
+            }
+            &.margin-fourth {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 25%;
+                }
+            }
+            &.margin-fourth-x3 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 75%;
+                }
+            }
+            &.margin-third {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 33.333%;
+                }
+            }
+            &.margin-third-x2 {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 66.666%;
+                }
+            }
+            &.margin-half {
+                &-#{$tablet-portrait-affix} {
+                    margin: initial;
+                }
+                &-#{$phone-affix} {
+                    margin-right: 50%;
+                }
             }
         }
     }
