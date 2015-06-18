@@ -30,7 +30,7 @@
         "browsers": [
             "last 5 versions",
             "> 5%",
-            "ie 8"
+            "ie 9"
         ]
     }
 }
