@@ -1,3 +1,7 @@
+.row {
+    margin-left: -#{$col-padding};
+    margin-right: -#{$col-padding};
+}
 .col {
     display: block;
     width: 100%;
@@ -9,26 +13,26 @@
     &.twelfth {
         width: 8.333%;
     }
-    &.twelfth-x11 {
-        width: 91.666%;
+    &.twelfth-x5 {
+        width: 41.666%;
     }
     &.twelfth-x7 {
         width: 58.333%;
     }
-    &.twelfth-x5 {
-        width: 41.666%;
+    &.twelfth-x11 {
+        width: 91.666%;
     }
     &.eighth {
         width: 12.5%;
     }
-    &.eighth-x7 {
-        width: 87.5%;
+    &.eighth-x3 {
+        width: 37.5%;
     }
     &.eighth-x5 {
         width: 62.5%;
     }
-    &.eighth-x3 {
-        width: 37.5%;
+    &.eighth-x7 {
+        width: 87.5%;
     }
     &.sixth {
         width: 16.666%;
@@ -54,26 +58,26 @@
     &.margin-twelfth {
         margin-left: 8.333%;
     }
-    &.margin-twelfth-x11 {
-        margin-left: 91.666%;
+    &.margin-twelfth-x5 {
+        margin-left: 41.666%;
     }
     &.margin-twelfth-x7 {
         margin-left: 58.333%;
     }
-    &.margin-twelfth-x5 {
-        margin-left: 41.666%;
+    &.margin-twelfth-x11 {
+        margin-left: 91.666%;
     }
     &.margin-eighth {
         margin-left: 12.5%;
     }
-    &.margin-eighth-x7 {
-        margin-left: 87.5%;
+    &.margin-eighth-x3 {
+        margin-left: 37.5%;
     }
     &.margin-eighth-x5 {
         margin-left: 62.5%;
     }
-    &.margin-eighth-x3 {
-        margin-left: 37.5%;
+    &.margin-eighth-x7 {
+        margin-left: 87.5%;
     }
     &.margin-sixth {
         margin-left: 16.666%;
@@ -99,63 +103,63 @@
     &.float-right {
         float: right;
         &.margin-twelfth {
-            margin: initial;
+            margin-left: initial;
             margin-right: 8.333%;
         }
-        &.margin-twelfth-x11 {
-            margin: initial;
-            margin-right: 91.666%;
-        }
-        &.margin-twelfth-x7 {
-            margin: initial;
-            margin-right: 58.333%;
-        }
         &.margin-twelfth-x5 {
-            margin: initial;
+            margin-left: initial;
             margin-right: 41.666%;
         }
+        &.margin-twelfth-x7 {
+            margin-left: initial;
+            margin-right: 58.333%;
+        }
+        &.margin-twelfth-x11 {
+            margin-left: initial;
+            margin-right: 91.666%;
+        }
         &.margin-eighth {
-            margin: initial;
+            margin-left: initial;
             margin-right: 12.5%;
         }
-        &.margin-eighth-x7 {
-            margin: initial;
-            margin-right: 87.5%;
-        }
-        &.margin-eighth-x5 {
-            margin: initial;
-            margin-right: 62.5%;
-        }
         &.margin-eighth-x3 {
-            margin: initial;
+            margin-left: initial;
             margin-right: 37.5%;
         }
+        &.margin-eighth-x5 {
+            margin-left: initial;
+            margin-right: 62.5%;
+        }
+        &.margin-eighth-x7 {
+            margin-left: initial;
+            margin-right: 87.5%;
+        }
         &.margin-sixth {
-            margin: initial;
+            margin-left: initial;
             margin-right: 16.666%;
         }
         &.margin-sixth-x5 {
-            margin: initial;
+            margin-left: initial;
             margin-right: 83.333%;
         }
         &.margin-fourth {
-            margin: initial;
+            margin-left: initial;
             margin-right: 25%;
         }
         &.margin-fourth-x3 {
-            margin: initial;
+            margin-left: initial;
             margin-right: 75%;
         }
         &.margin-third {
-            margin: initial;
+            margin-left: initial;
             margin-right: 33.333%;
         }
         &.margin-third-x2 {
-            margin: initial;
+            margin-left: initial;
             margin-right: 66.666%;
         }
         &.margin-half {
-            margin: initial;
+            margin-left: initial;
             margin-right: 50%;
         }
     }
