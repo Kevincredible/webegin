@@ -2,8 +2,8 @@
 $siteTitle = 'Site Title';
 
 function isCurrent($target) {
-	(strpos($_SERVER['PHP_SELF'], $target)) ?  $current = true :  $current = false;
-	return $current;
+    (strpos($_SERVER['PHP_SELF'], $target)) ?  $current = true :  $current = false;
+    return $current;
 }
 ?>
 <!doctype html>
