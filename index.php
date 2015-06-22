@@ -1,3 +1,3 @@
 <?php $pageTitle = 'Home'; include 'header.php'; ?>
-Hello, world!
+        Hello, world!
 <?php include 'footer.php'; ?>
