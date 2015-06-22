@@ -17,6 +17,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: $font-stack;
+    font-size: 14px;
+    line-height: 22px;
 }
 a {
     @include animated;
