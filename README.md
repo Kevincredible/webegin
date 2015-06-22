@@ -3,7 +3,8 @@ My personal web development starting point.
 
 ---
 
-#### Included Scripts
+#### Installed Assets
+* <a href="http://fortawesome.github.io/Font-Awesome/">**Font Awesome**</a> by Dave Gandy (MaxCDN)
 * <a href="https://github.com/afarkas/html5shiv">**HTML5 Shiv**</a> by Alexander Farkas
 * <a href="https://jquery.com/">**jQuery v1.11.3**</a> by jQuery Foundation (Google CDN)
 * <a href="https://developers.google.com/maps/documentation/javascript/">**Google Maps JavaScript API v3.19**</a> by Google Inc. (Google CDN)
