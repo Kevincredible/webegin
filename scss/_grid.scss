@@ -1,16 +1,16 @@
 .grid {
-    margin-top: -#{$column-spacing};
-    margin-bottom: -#{$column-spacing};
+    margin-top: -#{$grid-spacing};
+    margin-bottom: -#{$grid-spacing};
 }
 .row {
-    margin-left: -#{$column-spacing};
-    margin-right: -#{$column-spacing};
+    margin-left: -#{$grid-spacing};
+    margin-right: -#{$grid-spacing};
 }
 .column {
     display: block;
     width: 100%;
     float: left;
-    padding: $column-spacing;
+    padding: $grid-spacing;
     &.no-padding {
         padding: 0;
     }
@@ -169,26 +169,23 @@
     }
 }
 .margin-top {
-    margin-top: $column-spacing;
+    margin-top: $grid-spacing;
 }
 .margin-top-x2 {
-    margin-top: $column-spacing * 2;
+    margin-top: $grid-spacing * 2;
 }
 .margin-bottom {
-    margin-bottom: $column-spacing;
+    margin-bottom: $grid-spacing;
 }
 .margin-bottom-x2 {
-    margin-bottom: $column-spacing * 2;
+    margin-bottom: $grid-spacing * 2;
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
     @include breakpoint-columns(null, $tablet-landscape-affix);
-    @include breakpoint-margins(null, $tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
     @include breakpoint-columns($tablet-landscape-affix, $tablet-portrait-affix);
-    @include breakpoint-margins($tablet-landscape-affix, $tablet-portrait-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
     @include breakpoint-columns($tablet-portrait-affix, $phone-affix);
-    @include breakpoint-margins($tablet-portrait-affix, $phone-affix);
 }
