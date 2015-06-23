@@ -1,12 +1,18 @@
 .row {
-    margin-left: -#{$column-padding};
-    margin-right: -#{$column-padding};
+    margin-left: -#{$column-spacing};
+    margin-right: -#{$column-spacing};
+}
+.margin-top {
+    margin-top: $column-spacing;
+}
+.margin-top-x2 {
+    margin-top: $column-spacing * 2;
 }
 .column {
     display: block;
     width: 100%;
     float: left;
-    padding: $column-padding;
+    padding: $column-spacing;
     &.no-padding {
         padding: 0;
     }

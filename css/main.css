@@ -53,14 +53,19 @@ img {
 @media only screen and (max-width: 1024px) {
   .container {
     width: 100%;
-    padding: 0 -webkit-calc((1024px - 960px) / 2);
-    padding: 0 calc((1024px - 960px) / 2); } }
+    padding: 0 32px; } }
 /* ----------------------------------------
-Column Styles
+Grid Styles
 ---------------------------------------- */
 .row {
   margin-left: -10px;
   margin-right: -10px; }
+
+.margin-top {
+  margin-top: 10px; }
+
+.margin-top-x2 {
+  margin-top: 20px; }
 
 .column {
   display: block;
