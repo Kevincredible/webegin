@@ -1,6 +1,10 @@
 .grid {
-    margin-top: -#{$grid-spacing};
-    margin-bottom: -#{$grid-spacing};
+    padding-top: $grid-spacing;
+    padding-bottom: $grid-spacing;
+    &.no-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 .row {
     margin-left: -#{$grid-spacing};
