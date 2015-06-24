@@ -18,7 +18,7 @@
         margin-right: $margin;
     }
 }
-@mixin breakpoint-columns($override, $establish) {
+@mixin breakpoint-columns($establish, $override: null) {
     .column {
         @if ($override) {
             &.twelfth-#{$override}, &.twelfth-x11-#{$override}, &.twelfth-x7-#{$override}, &.twelfth-x5-#{$override}, &.eighth-#{$override}, &.eighth-x7-#{$override}, &.eighth-x5-#{$override}, &.eighth-x3-#{$override}, &.sixth-#{$override}, &.sixth-x5-#{$override}, &.fourth-#{$override}, &.fourth-x3-#{$override}, &.third-#{$override}, &.third-x2-#{$override}, &.half-#{$override} {

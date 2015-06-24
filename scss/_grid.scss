@@ -186,11 +186,11 @@
     margin-bottom: $grid-spacing * 2;
 }
 @media only screen and (max-width: $tablet-landscape-breakpoint) {
-    @include breakpoint-columns(null, $tablet-landscape-affix);
+    @include breakpoint-columns($tablet-landscape-affix);
 }
 @media only screen and (max-width: $tablet-portrait-breakpoint) {
-    @include breakpoint-columns($tablet-landscape-affix, $tablet-portrait-affix);
+    @include breakpoint-columns($tablet-portrait-affix, $tablet-landscape-affix);
 }
 @media only screen and (max-width: $phone-breakpoint) {
-    @include breakpoint-columns($tablet-portrait-affix, $phone-affix);
+    @include breakpoint-columns($phone-affix, $tablet-portrait-affix);
 }
