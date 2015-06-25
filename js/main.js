@@ -2,7 +2,7 @@
 Google Maps API
 ---------------------------------------- */
 var map,
-brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+chicago = new google.maps.LatLng(41.8337329, -87.7321554);
 
 var MY_MAPTYPE_ID = 'custom_style';
 
@@ -13,7 +13,7 @@ function initialize() {
     
     var mapOptions = {
         zoom: 12,
-        center: brooklyn,
+        center: chicago,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
         },
