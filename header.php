@@ -17,6 +17,7 @@ function isCurrent($target) {
         <link rel="stylesheet" type="text/css" href="css/main.min.css">
         <!--[if lt IE 9]>
             <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
         <![endif]-->
     </head>
     <body>
