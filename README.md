@@ -4,7 +4,7 @@ A bare-bones web development starting point.
 ---
 
 #### Installed Assets
-* <a href="http://fortawesome.github.io/Font-Awesome/">**Font Awesome v4.3.0**</a> by Dave Gandy (MaxCDN)
+* <a href="http://fontawesome.io/">**Font Awesome v4.3.0**</a> by Dave Gandy (MaxCDN)
 * <a href="https://github.com/afarkas/html5shiv">**HTML5 Shiv v3.7.3-pre**</a> by Alexander Farkas
 * <a href="https://github.com/scottjehl/Respond">**Respond v1.4.2**</a> by Scott Jehl
 * <a href="https://jquery.com/">**jQuery v1.11.3**</a> by jQuery Foundation (Google CDN)
