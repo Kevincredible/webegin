@@ -33,8 +33,6 @@ body {
 a {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 a img {
   outline: none;
