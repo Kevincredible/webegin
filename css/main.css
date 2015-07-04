@@ -66,6 +66,14 @@ img {
   transform: translateY(-50%);
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     width: 100%;
@@ -1135,4 +1143,5 @@ Site Styles
 /* ----------------------------------------
 Overrides
 ---------------------------------------- */
+
 
