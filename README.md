@@ -1,4 +1,4 @@
-# webegin
+# Webegin
 A bare-bones web development starting point.
 
 ---
