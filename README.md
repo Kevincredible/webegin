@@ -15,4 +15,4 @@ A bare-bones web development starting point.
 ---
 
 #### Automation
-Included is a JSON for a custom <a href="http://mixture.io/">Mixture</a> project, which handles common Grunt/Gulp tasks including preprocessing, minification, and vendor prefixing.
+Included is a JSON for a custom <a href="http://mixture.io/">Mixture</a> project, which handles common watch tasks including preprocessing, minification, and vendor prefixing.
