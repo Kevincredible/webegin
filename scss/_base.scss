@@ -20,6 +20,10 @@ body {
     font-family: $font-stack;
     font-size: $font-size;
     line-height: $line-height;
+    &.disable-scroll {
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: none;
+    }
 }
 a {
     @include animated;

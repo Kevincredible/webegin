@@ -29,6 +29,10 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
+body.disable-scroll {
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: none;
+}
 
 a {
   -webkit-transition: all 250ms ease;
