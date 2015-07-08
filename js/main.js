@@ -20,7 +20,7 @@ function initialize() {
         mapTypeId: MY_MAPTYPE_ID
     };
     
-    if (document.getElementById('map-canvas') != null) {
+    if (document.getElementById('map-canvas') != null) { // Check if the map markup exists
         var styledMapOptions = { name: 'Custom Style' },
         customMapType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
         
