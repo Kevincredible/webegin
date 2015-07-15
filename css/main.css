@@ -39,6 +39,7 @@ a {
   transition: all 250ms ease;
 }
 a img {
+  border: none;
   outline: none;
 }
 
@@ -1147,4 +1148,3 @@ Site Styles
 /* ----------------------------------------
 Overrides
 ---------------------------------------- */
-
