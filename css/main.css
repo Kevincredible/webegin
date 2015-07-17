@@ -67,6 +67,7 @@ img {
 
 .ellipsis {
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .vertical-align {
@@ -876,4 +877,3 @@ Site Styles
 /* ----------------------------------------
 Overrides
 ---------------------------------------- */
-

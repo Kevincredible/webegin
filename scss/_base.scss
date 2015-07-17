@@ -51,6 +51,7 @@ img {
 }
 .ellipsis {
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .vertical-align {
     position: relative;
