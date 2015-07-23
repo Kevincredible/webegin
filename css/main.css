@@ -110,6 +110,9 @@ Grid Styles
 .column.no-padding {
   padding: 0;
 }
+.column.span-0 {
+  width: 0;
+}
 .column.span-1 {
   width: 8.333%;
 }
@@ -145,6 +148,9 @@ Grid Styles
 }
 .column.span-12 {
   width: 100%;
+}
+.column.margin-span-0 {
+  margin-left: 0;
 }
 .column.margin-span-1 {
   margin-left: 8.333%;
@@ -184,6 +190,10 @@ Grid Styles
 }
 .column.float-right {
   float: right;
+}
+.column.float-right.margin-span-0 {
+  margin-left: initial;
+  margin-right: 0;
 }
 .column.float-right.margin-span-1 {
   margin-left: initial;
@@ -243,6 +253,9 @@ Grid Styles
 }
 
 @media only screen and (max-width: 1024px) {
+  .column.span-0-tl {
+    width: 0;
+  }
   .column.span-1-tl {
     width: 8.333%;
   }
@@ -279,6 +292,9 @@ Grid Styles
   .column.span-12-tl {
     width: 100%;
   }
+  .column.margin-span-0-tl {
+    margin-left: 0;
+  }
   .column.margin-span-1-tl {
     margin-left: 8.333%;
   }
@@ -314,6 +330,10 @@ Grid Styles
   }
   .column.margin-span-12-tl {
     margin-left: 100%;
+  }
+  .column.float-right.margin-span-0-tl {
+    margin-left: 0;
+    margin-right: 0;
   }
   .column.float-right.margin-span-1-tl {
     margin-left: 0;
@@ -365,6 +385,9 @@ Grid Styles
   }
 }
 @media only screen and (max-width: 768px) {
+  .column.span-0-tp {
+    width: 0;
+  }
   .column.span-1-tp {
     width: 8.333%;
   }
@@ -401,6 +424,9 @@ Grid Styles
   .column.span-12-tp {
     width: 100%;
   }
+  .column.margin-span-0-tp {
+    margin-left: 0;
+  }
   .column.margin-span-1-tp {
     margin-left: 8.333%;
   }
@@ -436,6 +462,10 @@ Grid Styles
   }
   .column.margin-span-12-tp {
     margin-left: 100%;
+  }
+  .column.float-right.margin-span-0-tp {
+    margin-left: 0;
+    margin-right: 0;
   }
   .column.float-right.margin-span-1-tp {
     margin-left: 0;
@@ -487,6 +517,9 @@ Grid Styles
   }
 }
 @media only screen and (max-width: 480px) {
+  .column.span-0-p {
+    width: 0;
+  }
   .column.span-1-p {
     width: 8.333%;
   }
@@ -523,6 +556,9 @@ Grid Styles
   .column.span-12-p {
     width: 100%;
   }
+  .column.margin-span-0-p {
+    margin-left: 0;
+  }
   .column.margin-span-1-p {
     margin-left: 8.333%;
   }
@@ -558,6 +594,10 @@ Grid Styles
   }
   .column.margin-span-12-p {
     margin-left: 100%;
+  }
+  .column.float-right.margin-span-0-p {
+    margin-left: 0;
+    margin-right: 0;
   }
   .column.float-right.margin-span-1-p {
     margin-left: 0;
