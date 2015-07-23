@@ -17,37 +17,11 @@
         margin-right: $margin;
     }
 }
-@mixin breakpoint-columns($establish, $override: null) {
+@mixin breakpoint-columns($establish) {
     .column {
-        @if ($override) {
-            @each $column in $column-list {
-                &.#{nth($column, 1)}-#{$override} {
-                    width: 100%;
-                }
-            }
-        } @else {
-            @each $column in $column-list {
-                &.#{nth($column, 1)} {
-                    width: 100%;
-                }
-            }
-        }
         @each $column in $column-list {
             &.#{nth($column, 1)} {
                 @include column-width(nth($column, 2), $establish);
-            }
-        }
-        @if ($override) {
-            @each $column in $column-list {
-                &.margin-#{nth($column, 1)}-#{$override} {
-                    margin-left: 0;
-                }
-            }
-        } @else {
-            @each $column in $column-list {
-                &.margin-#{nth($column, 1)} {
-                    margin-left: 0;
-                }
             }
         }
         @each $column in $column-list {
@@ -56,19 +30,6 @@
             }
         }
         &.float-right {
-            @if ($override) {
-                @each $column in $column-list {
-                    &.margin-#{nth($column, 1)}-#{$override} {
-                        margin-right: 0;
-                    }
-                }
-            } @else {
-                @each $column in $column-list {
-                    &.margin-#{nth($column, 1)} {
-                        margin-right: 0;
-                    }
-                }
-            }
             @each $column in $column-list {
                 &.margin-#{nth($column, 1)} {
                     @include column-float-right-margin(nth($column, 2), $establish);
