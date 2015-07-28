@@ -13,8 +13,6 @@ html {
 }
 body {
     @extend html;
-    overflow-x: hidden;
-    overflow-y: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
