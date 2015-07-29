@@ -11,7 +11,7 @@ Base Styles
 /* ----------------------------------------
 Grid Styles
 ---------------------------------------- */
-@import 'grid';
+@import 'grids';
 
 /* ----------------------------------------
 Site Styles
@@ -22,3 +22,8 @@ Site Styles
 Overrides
 ---------------------------------------- */
 //@import 'overrides/plugin-one', 'overrides/plugin-two', 'overrides/plugin-three';
+
+/* ----------------------------------------
+Adjustment Styles
+---------------------------------------- */
+@import 'adjustments';
