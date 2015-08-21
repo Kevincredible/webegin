@@ -545,6 +545,47 @@ Adjustment Styles
 .adjust-va-tb {
   vertical-align: text-bottom; }
 
+.adjust-c-p {
+  cursor: pointer; }
+
+.adjust-c-na {
+  cursor: not-allowed; }
+
+.adjust-c-t {
+  cursor: text; }
+
+.adjust-c-h {
+  cursor: help; }
+
+.adjust-c-nd {
+  cursor: no-drop; }
+
+.adjust-c-w {
+  cursor: wait; }
+
+.adjust-c-c {
+  cursor: cell; }
+
+.adjust-c-m {
+  cursor: move; }
+
+.adjust-c-n {
+  cursor: none; }
+
+.adjust-c-zi {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in; }
+
+.adjust-c-zo {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out; }
+
+.adjust-c-a {
+  cursor: alias; }
+
+.adjust-c-i {
+  cursor: initial; }
+
 .adjust-m-t-0 {
   margin-top: 0px; }
 
@@ -1361,6 +1402,34 @@ Adjustment Styles
     vertical-align: bottom; }
   .adjust-va-tb-tl {
     vertical-align: text-bottom; }
+  .adjust-c-p-tl {
+    cursor: pointer; }
+  .adjust-c-na-tl {
+    cursor: not-allowed; }
+  .adjust-c-t-tl {
+    cursor: text; }
+  .adjust-c-h-tl {
+    cursor: help; }
+  .adjust-c-nd-tl {
+    cursor: no-drop; }
+  .adjust-c-w-tl {
+    cursor: wait; }
+  .adjust-c-c-tl {
+    cursor: cell; }
+  .adjust-c-m-tl {
+    cursor: move; }
+  .adjust-c-n-tl {
+    cursor: none; }
+  .adjust-c-zi-tl {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
+  .adjust-c-zo-tl {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out; }
+  .adjust-c-a-tl {
+    cursor: alias; }
+  .adjust-c-i-tl {
+    cursor: initial; }
   .adjust-m-t-0-tl {
     margin-top: 0px; }
   .adjust-m-t-1-tl {
@@ -1923,6 +1992,34 @@ Adjustment Styles
     vertical-align: bottom; }
   .adjust-va-tb-tp {
     vertical-align: text-bottom; }
+  .adjust-c-p-tp {
+    cursor: pointer; }
+  .adjust-c-na-tp {
+    cursor: not-allowed; }
+  .adjust-c-t-tp {
+    cursor: text; }
+  .adjust-c-h-tp {
+    cursor: help; }
+  .adjust-c-nd-tp {
+    cursor: no-drop; }
+  .adjust-c-w-tp {
+    cursor: wait; }
+  .adjust-c-c-tp {
+    cursor: cell; }
+  .adjust-c-m-tp {
+    cursor: move; }
+  .adjust-c-n-tp {
+    cursor: none; }
+  .adjust-c-zi-tp {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
+  .adjust-c-zo-tp {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out; }
+  .adjust-c-a-tp {
+    cursor: alias; }
+  .adjust-c-i-tp {
+    cursor: initial; }
   .adjust-m-t-0-tp {
     margin-top: 0px; }
   .adjust-m-t-1-tp {
@@ -2485,6 +2582,34 @@ Adjustment Styles
     vertical-align: bottom; }
   .adjust-va-tb-p {
     vertical-align: text-bottom; }
+  .adjust-c-p-p {
+    cursor: pointer; }
+  .adjust-c-na-p {
+    cursor: not-allowed; }
+  .adjust-c-t-p {
+    cursor: text; }
+  .adjust-c-h-p {
+    cursor: help; }
+  .adjust-c-nd-p {
+    cursor: no-drop; }
+  .adjust-c-w-p {
+    cursor: wait; }
+  .adjust-c-c-p {
+    cursor: cell; }
+  .adjust-c-m-p {
+    cursor: move; }
+  .adjust-c-n-p {
+    cursor: none; }
+  .adjust-c-zi-p {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
+  .adjust-c-zo-p {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out; }
+  .adjust-c-a-p {
+    cursor: alias; }
+  .adjust-c-i-p {
+    cursor: initial; }
   .adjust-m-t-0-p {
     margin-top: 0px; }
   .adjust-m-t-1-p {
