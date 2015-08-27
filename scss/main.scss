@@ -26,4 +26,6 @@ Overrides
 /* ----------------------------------------
 Adjustment Styles
 ---------------------------------------- */
-@import 'adjustments';
+body {
+    @import 'adjustments';
+}
