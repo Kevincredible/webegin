@@ -11,7 +11,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 5 versions', '> 5%', 'ie 9', 'ie 8'],
+            browsers: ['last 5 versions', '> 5%', 'ie 9'],
             cascade: false
         }))
         .pipe(sourcemaps.write('./'))
