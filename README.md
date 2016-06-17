@@ -4,9 +4,9 @@ A bare-bones web development starting point.
 ---
 
 #### Installed Assets
-* <a href="http://fontawesome.io/">**Font Awesome v4.5.0**</a> by Dave Gandy (MaxCDN)
+* <a href="http://fontawesome.io/">**Font Awesome v4.6.3**</a> by Dave Gandy (MaxCDN)
 * <a href="https://jquery.com/">**jQuery v1.11.3**</a> by jQuery Foundation (Google CDN)
-* <a href="https://developers.google.com/maps/documentation/javascript/">**Google Maps JavaScript API v3.19**</a> by Google Inc. (Google CDN)
+* <a href="https://github.com/rodneyrehm/viewport-units-buggyfill">**Viewport Units Buggyfill v0.6.0**</a> by Rodney Rehm
 
 ---
 
