@@ -1,4 +1,1 @@
-/* ----------------------------------------
-Viewport Units Buggyfill
----------------------------------------- */
-window.viewportUnitsBuggyfill.init();
+// Place your project-specific scripts here
