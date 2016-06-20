@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
-    uglify = require('gulp-uglify'),
     cssnano = require('gulp-cssnano'),
+    uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer');
 
