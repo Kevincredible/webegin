@@ -7,7 +7,7 @@ function isCurrent($target) {
     return $current;
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <?php if (isDev) { ?>
