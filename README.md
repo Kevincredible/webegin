@@ -1,5 +1,5 @@
 # Webegin
-A bare-bones web development template.
+A bare-bones web development template
 
 ---
 
