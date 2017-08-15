@@ -35,7 +35,6 @@ body.disable-scroll {
 }
 
 a {
-  -webkit-transition: all 250ms ease 0ms;
   transition: all 250ms ease 0ms;
 }
 
