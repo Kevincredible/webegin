@@ -1,4 +1,14 @@
 .#{$prefix} {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        &:before,
+        &:after {
+            @extend *;
+            display: inline-block;
+        }
+    }
     img {
         max-width: 100%;
         height: auto;
