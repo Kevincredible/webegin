@@ -1,1 +1,14 @@
-// Place your project-specific styles here
+.#{$prefix} {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    a {
+        @include animated;
+        img {
+            border: none;
+            outline: none;
+        }
+    }
+    // Place your project-specific styles here
+}
