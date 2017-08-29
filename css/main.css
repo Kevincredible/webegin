@@ -14,6 +14,11 @@ Partials
 /* ----------------------------------------
 Project Styles
 ---------------------------------------- */
+.project {
+  width: 100%;
+  height: 100%;
+}
+
 .project *, .project *:before, .project *:after {
   margin: 0;
   padding: 0;
