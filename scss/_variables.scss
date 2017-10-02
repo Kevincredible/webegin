@@ -1,7 +1,7 @@
-$prefix: project;
-$font-body: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$breakpoint-x-large: 80rem;
-$breakpoint-large: 64rem;
-$breakpoint-medium: 48rem;
-$breakpoint-small: 30rem;
-$breakpoint-x-small: 20rem;
+$prefix: project !default;
+$font-body: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+$breakpoint-x-large: 80rem !default;
+$breakpoint-large: 64rem !default;
+$breakpoint-medium: 48rem !default;
+$breakpoint-small: 30rem !default;
+$breakpoint-x-small: 20rem !default;
